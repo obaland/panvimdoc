@@ -1,6 +1,6 @@
-FROM pandoc/core:2.17
+FROM pandoc/core:2.17-ubuntu
 
-RUN apk update && apk upgrade && apk add bash vim neovim
+RUN apt update && apt upgrade -y && apt install bash vim neovim
 
 # Copies your code file  repository to the filesystem
 COPY entrypoint.sh /entrypoint.sh
