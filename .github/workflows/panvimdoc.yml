@@ -15,5 +15,5 @@ jobs:
           pandoc: doc/panvimdoc.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Auto generate docs'
+          commit_message: "Auto generate docs"
           branch: ${{ github.head_ref }}
